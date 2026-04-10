@@ -29,7 +29,7 @@
 
 ![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_L5KnVCm9qp1anjeI4Q-Lj.png "image.png")
 
-- **Vertical scaling / Scaling up: **enhances system capacity by upgrading existing hardware—adding CPU, RAM, or storage—to a single server, making it more powerful rather than adding more servers. It is best suited for monolithic applications or databases needing a simple, fast performance boost without complex, distributed architecture, but is limited by the maximum capacity of one machine.
+- **Vertical scaling / Scaling up**: enhances system capacity by upgrading existing hardware—adding CPU, RAM, or storage—to a single server, making it more powerful rather than adding more servers. It is best suited for monolithic applications or databases needing a simple, fast performance boost without complex, distributed architecture, but is limited by the maximum capacity of one machine.
 ![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_XT0HxRX_Uh-SZpDrNZbp4.png "image.png")
 
 - **Load Balancer:** balances equal load between all the server(s), by serving as a **reverse-proxy** between user & server, also going to server for the request’s response on user’s behalf.
