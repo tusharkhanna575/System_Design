@@ -12,7 +12,7 @@
 - The protocol followed is **ARP** (Address Resolution Protocol)
 - **Bottleneck** can be useful as well as not useful
 - System Design is all about **Tradeoffs** (in the form of storage, CPU, RAM, etc.)
-- **Vertical Scaling / Scaling Up: **increase system capacity by adding more resources - CPU, RAM, or storage to a single server.
+- **Vertical Scaling / Scaling Up**: increase system capacity by adding more resources - CPU, RAM, or storage to a single server.
 - **SPOF (Single Point of Failure)**
 - Keep backup server(s)
 - **CAP Theorem:**
@@ -20,11 +20,11 @@
     - **Availability**
     - **Partition - Tolerance**
 
-- **Stateful Servers: **the server keeps track of the state of each session or interaction and maintains that information based on the user's past requests. **Vertical Scaling** is difficult (downtime, SPOF, high RAM consumption, resource intensive)
+- **Stateful Servers**: the server keeps track of the state of each session or interaction and maintains that information based on the user's past requests. **Vertical Scaling** is difficult (downtime, SPOF, high RAM consumption, resource intensive)
 - **Web socket** servers are stateful servers, hence hard to scale
 - Discourage use of stateful servers
-- **Stateless servers **are easy to scale, because connection can be made to any server, reducing SPOF, increasing availability, solves money problem by auto-scaling
-- **Horizontal Scaling / Scaling out: **increases capacity by adding more machines to a system, improving fault tolerance and handling high, fluctuating traffic via load balancing.
+- **Stateless servers** are easy to scale, because connection can be made to any server, reducing SPOF, increasing availability, solves money problem by auto-scaling
+- **Horizontal Scaling / Scaling out**: increases capacity by adding more machines to a system, improving fault tolerance and handling high, fluctuating traffic via load balancing.
 
 
 ![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_L5KnVCm9qp1anjeI4Q-Lj.png "image.png")
