@@ -43,7 +43,7 @@
 - _For example:_ Youtube, Netflix, Hotstar all are video streaming platforms but have different system design strategy.
 ![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_pvjAK5-zIkxNesk1YXIxt.png "image.png")
 
-- **TTL: **time to live (amount of time after which cache to be cleared)
+- **TTL**: time to live (amount of time after which cache to be cleared)
 - A **spike** in system design is a time-boxed, Agile technique used to research, prototype, or investigate technical uncertainties, risks, or complex requirements before full-scale development
 
 
