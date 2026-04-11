@@ -46,6 +46,9 @@
 
 - **TTL**: time to live (amount of time after which cache to be cleared)
 - A **spike** in system design is a time-boxed, Agile technique used to research, prototype, or investigate technical uncertainties, risks, or complex requirements before full-scale development
+![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_W74g7wjMo9ZvS8CMvEPBs.png "image.png")
+
+- 
 
 
 
