@@ -6,7 +6,7 @@
 
 | Serial Number | Topic |
 | ----- | ----- |
-| 1 | [Introduction to System Design](01%20-%20Introduction%20to%20System%20Design.md) |
-| 2 | [Scaling Database(s) to Millions](02%20-%20Scaling%20Database%20to%20Millions.md) |
+| 1 | [Introduction to System Design](01%20-%20Introduction%20to%20System%20Design.html) |
+| 2 | [Scaling Database(s) to Millions](02%20-%20Scaling%20Database%20to%20Millions.html) |
 
 <!--- Eraser file: https://app.eraser.io/workspace/DgkOCiuOVXRVhnWSfkvw --->
