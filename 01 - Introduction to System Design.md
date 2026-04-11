@@ -48,7 +48,41 @@
 - A **spike** in system design is a time-boxed, Agile technique used to research, prototype, or investigate technical uncertainties, risks, or complex requirements before full-scale development
 ![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_W74g7wjMo9ZvS8CMvEPBs.png "image.png")
 
-- 
+- There may be some cases like cache that expired or cleared, at that moment only the database load suddenly spikes up, leading the system(s) to crash. 
+- **Cache invalidation** is the critical process of removing or updating stale data from a system's cache when the underlying source of truth changes. It ensures data consistency and prevents users from seeing outdated information.
+- In order to handle this, we use some **cache expiry techniques**, namely:
+    - **Jitter on TTL**: 
+        - Breaks the synchronization of cache expiry events by adding a small, random time offset to the set Time-To-Live (TTL).
+        - Prevents the "Thundering Herd Problem" by ensuring all keys do not expire at the exact same moment.
+        - Distributes the load of cache recomputation over a small time window, protecting the backend.
+
+    - **Probability Early Computation**:
+        - The cache entry is recomputed and refreshed before its actual TTL expires.
+        - The probability of initiating a recompute increases as the entry's age approaches its expiration time.
+        - Used for high-traffic, time-sensitive events like:
+            1. IRCTC (tatkal booking)
+            2. Flipkart Big Billion Days (12 AM)
+            3. Zomato (lunch time on weekdays, 12 - 2 PM)
+
+
+    - **Mutex / Lock (Binary Semaphore)**:
+        - Ensures only a single request performs the expensive cache recomputation when a cache miss occurs.
+        - The first request acquires a binary lock on the key, and subsequent requests wait for the result or are served a stale value.
+        - Effectively prevents the Thundering Herd from hitting the backend, as the work is strictly serialized.
+
+    - **Stale while Revalidating (SWR)**:
+        - Serves the currently cached, but expired ("stale"), value immediately to the user to achieve low latency.
+        - Triggers the request for new data (revalidation) in the background, minimizing the user's wait time.
+        - Used in applications like Hotstar and leaderboard designs where slight data lag is acceptable in exchange for speed.
+
+    - **Cache Warming (Pre - warming)**:
+        - Involves proactively loading data into the cache before it is requested by users.
+        - Used specifically to prevent the "cold-start penalty" right before a known, scheduled traffic spike.
+        - Applied in scenarios such as BookMyShow on Friday (9 AM) when ticket sales are expected to surge.Used in BookMyShow Friday (9 AM)
+
+
+- The above scenario(s) is commonly known as **The Thundering Herd Problem**. 
+- Artifacts [﻿https://app.eraser.io/workspace/SVBgeRmqA2BgKoaeHhct](https://app.eraser.io/workspace/SVBgeRmqA2BgKoaeHhct)﻿
 
 
 
