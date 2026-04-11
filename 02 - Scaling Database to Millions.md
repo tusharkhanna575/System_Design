@@ -9,13 +9,13 @@
     - Restores DB at the specified time, position
     - Life saver
 
-- **Eventual consistency **is a consistency model in distributed systems where all data replicas are guaranteed to converge to the same value over time, provided no new updates are made to those items. It prioritizes system availability and low latency (AP in CAP theorem) over immediate, strict consistency, allowing temporary, inconsistent reads across different nodes.
+- **Eventual consistency** is a consistency model in distributed systems where all data replicas are guaranteed to converge to the same value over time, provided no new updates are made to those items. It prioritizes system availability and low latency (AP in CAP theorem) over immediate, strict consistency, allowing temporary, inconsistent reads across different nodes.
 #### Split Brain Problem
-- **The Split Brain Problem: **The split-brain problem in system design is a situation in a distributed system, such as a cluster of servers, where the nodes become partitioned or disconnected from each other due to a network failure, but they all continue to operate independently. Each partition, or "brain," believes it is the sole active member of the cluster and starts making decisions or accepting writes.
+- **The Split Brain Problem**: The split-brain problem in system design is a situation in a distributed system, such as a cluster of servers, where the nodes become partitioned or disconnected from each other due to a network failure, but they all continue to operate independently. Each partition, or "brain," believes it is the sole active member of the cluster and starts making decisions or accepting writes.
 - The critical issue arises when the network connection is restored. Since both partitions have been independently updating data, they now have conflicting states, leading to data inconsistency or corruption.
 - To prevent split-brain, distributed systems use mechanisms like:
     - **Quorum:** Requiring a majority of nodes (a quorum) to agree before making a decision or performing a write operation. If a partition doesn't have a quorum, it shuts down or enters a read-only mode, preventing data conflicts.
-    - **Fencing/STONITH (Shoot The Other Node In The Head):** A mechanism used to ensure that a partitioned node is no longer modifying shared data or resources.
+    - **Fencing/STONITH (Shoot The Other Node In The Head)**: A mechanism used to ensure that a partitioned node is no longer modifying shared data or resources.
 
 
 
