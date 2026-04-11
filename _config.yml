@@ -1,6 +1,2 @@
 include:
   - .eraser
-
-theme: minima
-minima:
-  skin: dark
