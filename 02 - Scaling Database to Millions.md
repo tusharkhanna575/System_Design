@@ -4,7 +4,7 @@
 
 #### Single Database Architecture
 
-![image.png](./.eraser/j6EpBKaYBeMiPq1umDCR___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_rwOFNK59fZ-vEflbW0opL.png "image.png")
+![image.png](.eraser/j6EpBKaYBeMiPq1umDCR___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_rwOFNK59fZ-vEflbW0opL.png "image.png")
 
 - **Point in time recovery (PITR)**: It enables restoring a database to a specific, granular transaction moment by combining periodic full backups with continuous archiving of write-ahead logs (WAL) or binary logs (binlogs). Key components include immutable storage for backups, log streaming, and automation to replay logs to a desired timestamp.
   - Costly service
@@ -21,9 +21,9 @@
   - **Quorum:** Requiring a majority of nodes (a quorum) to agree before making a decision or performing a write operation. If a partition doesn't have a quorum, it shuts down or enters a read-only mode, preventing data conflicts.
   - **Fencing/STONITH (Shoot The Other Node In The Head)**: A mechanism used to ensure that a partitioned node is no longer modifying shared data or resources.
 
-![image.png](./.eraser/j6EpBKaYBeMiPq1umDCR___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_0iUM3v4Tsn2jcOXpqBsmh.png "image.png")
+![image.png](.eraser/j6EpBKaYBeMiPq1umDCR___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_0iUM3v4Tsn2jcOXpqBsmh.png "image.png")
 
-![image.png](./.eraser/j6EpBKaYBeMiPq1umDCR___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_IYgVKpzwuT96Y77U0Nxd9.png "image.png")
+![image.png](.eraser/j6EpBKaYBeMiPq1umDCR___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_IYgVKpzwuT96Y77U0Nxd9.png "image.png")
 
 - **Quorum / Majority Voting (>= 3votes)**: At least 2 nodes, should yes approval for write transaction, else the write operation will not take place. Another option is **ZooKeeper**.
 For every database write operation, a lock has to be acquired for the operation to take place (like for example 30s). That’s why clicking the Buy**Now**button multiple times in a very short span of time is considered to be a single transaction only.
