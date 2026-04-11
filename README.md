@@ -5,8 +5,8 @@
 
 | Serial Number | Topic |
 | ----- | ----- |
-| 1 | [﻿01 - Introduction to System Designsign﻿](https://app.eraser.io/workspace/m9xuzBpUVwe7uLrAx6Ug)﻿n.md) |
-| 2 | [﻿02 - Scaling Database to Millions](https://app.eraser.io/workspace/j6EpBKaYBeMiPq1umDCR)﻿ |
+| 1 | [﻿Introduction to System Design﻿](https://github.com/tusharkhanna575/SystemDesign/blob/main/01%20-%20Introduction%20to%20System%20Design.md﻿) |
+| 2 | [Scaling Database(s) to Million(s)](https://github.com/tusharkhanna575/SystemDesign/blob/main/02%20-%20Scaling%20Database%20to%20Millions.md) |
 
 
 
