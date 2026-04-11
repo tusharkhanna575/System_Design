@@ -10,7 +10,7 @@ title: Introduction to System Design
 
 - Start with the design of a system which should be able to handle at least 1 user.
 - **1 -> 10K -> 1M**
-![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_hA2MSIPd8-vb5Zl7UD6LW.png "image.png")
+![image.png](.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_hA2MSIPd8-vb5Zl7UD6LW.png "image.png")
 
 - **DNS**: Domain Name Server
 - The process is called **domain name resolution**
@@ -32,10 +32,10 @@ title: Introduction to System Design
 - **Stateless servers** are easy to scale, because connection can be made to any server, reducing SPOF, increasing availability, solves money problem by auto-scaling
 - **Horizontal Scaling / Scaling out**: increases capacity by adding more machines to a system, improving fault tolerance and handling high, fluctuating traffic via load balancing.
 
-![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_L5KnVCm9qp1anjeI4Q-Lj.png "image.png")
+![image.png](.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_L5KnVCm9qp1anjeI4Q-Lj.png "image.png")
 
 - **Vertical scaling / Scaling up**: enhances system capacity by upgrading existing hardware—adding CPU, RAM, or storage—to a single server, making it more powerful rather than adding more servers. It is best suited for monolithic applications or databases needing a simple, fast performance boost without complex, distributed architecture, but is limited by the maximum capacity of one machine.
-![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_XT0HxRX_Uh-SZpDrNZbp4.png "image.png")
+![image.png](.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_XT0HxRX_Uh-SZpDrNZbp4.png "image.png")
 
 - **Load Balancer:** balances equal load between all the server(s), by serving as a **reverse-proxy** between user & server, also going to server for the request’s response on user’s behalf.
 - In DNS, we keep the IP Address of load balancer
@@ -46,11 +46,11 @@ title: Introduction to System Design
 - Each platform /application will have its own system design strategy
 - **Pre - Warming:** proactively initializing resources or loading data before they are requested to eliminate latency.
 - _For example:_ Youtube, Netflix, Hotstar all are video streaming platforms but have different system design strategy.
-![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_pvjAK5-zIkxNesk1YXIxt.png "image.png")
+![image.png](.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_pvjAK5-zIkxNesk1YXIxt.png "image.png")
 
 - **TTL**: time to live (amount of time after which cache to be cleared)
 - A **spike** in system design is a time-boxed, Agile technique used to research, prototype, or investigate technical uncertainties, risks, or complex requirements before full-scale development
-![image.png](/.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_W74g7wjMo9ZvS8CMvEPBs.png "image.png")
+![image.png](.eraser/zlLTDxiAatIMepkFzrk1___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_W74g7wjMo9ZvS8CMvEPBs.png "image.png")
 
 - There may be some cases like cache that expired or cleared, at that moment only the database load suddenly spikes up, leading the system(s) to crash.
 - **Cache invalidation** is the critical process of removing or updating stale data from a system's cache when the underlying source of truth changes. It ensures data consistency and prevents users from seeing outdated information.
