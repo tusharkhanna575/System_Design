@@ -5,7 +5,7 @@
 
 | Serial Number | Topic |
 | ----- | ----- |
-| 1 | [﻿01 - Introduction to System Design](https://app.eraser.io/workspace/m9xuzBpUVwe7uLrAx6Ug)﻿n.md) |
+| 1 | [﻿01 - Introduction to System Designsign﻿](https://app.eraser.io/workspace/m9xuzBpUVwe7uLrAx6Ug)﻿n.md) |
 | 2 | [﻿02 - Scaling Database to Millions](https://app.eraser.io/workspace/j6EpBKaYBeMiPq1umDCR)﻿ |
 
 
