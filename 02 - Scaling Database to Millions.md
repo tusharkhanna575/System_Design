@@ -22,7 +22,7 @@
 ![image.png](/.eraser/j6EpBKaYBeMiPq1umDCR___JRTMbq9sLYe9p3tlCJ7gUsKxv173___image_IYgVKpzwuT96Y77U0Nxd9.png "image.png")
 
 - **Quorum / Majority Voting (>= 3votes)**: At least 2 nodes, should yes approval for write transaction, else the write operation will not take place. Another option is **ZooKeeper**. 
-- For every database write operation, a lock has to be acquired for the operation to take place (like for example 30s). That’s why clicking the Buy** Now** button multiple times in a very short span of time is considered to be a single transaction only.
+- For every database write operation, a lock has to be acquired for the operation to take place (like for example 30s). That’s why clicking the Buy **Now** button multiple times in a very short span of time is considered to be a single transaction only.
 #### Distributed Locking
 **1. The Two Purposes of Locks (Know Your Use Case)**
 
