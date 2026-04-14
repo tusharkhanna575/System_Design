@@ -1,4 +1,5 @@
----
+  ---
+
 title: Introduction to System Design
 ---
 
@@ -65,9 +66,9 @@ title: Introduction to System Design
     - The cache entry is recomputed and refreshed before its actual TTL expires.
     - The probability of initiating a recompute increases as the entry's age approaches its expiration time.
     - Used for high-traffic, time-sensitive events like:
-            1. IRCTC (tatkal booking)
-            2. Flipkart Big Billion Days (12 AM)
-            3. Zomato (lunch time on weekdays, 12 - 2 PM)
+      - IRCTC (tatkal booking)
+      - Flipkart Big Billion Days (12 AM)
+      - Zomato (lunch time on weekdays, 12 - 2 PM)
 
   - **Mutex / Lock (Binary Semaphore)**:
     - Ensures only a single request performs the expensive cache recomputation when a cache miss occurs.
