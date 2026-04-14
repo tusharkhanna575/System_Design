@@ -83,7 +83,7 @@ title: Introduction to System Design
   - **Cache Warming (Pre - warming)**:
     - Involves proactively loading data into the cache before it is requested by users.
     - Used specifically to prevent the "cold-start penalty" right before a known, scheduled traffic spike.
-    - Applied in scenarios such as BookMyShow on Friday (9 AM) when ticket sales are expected to surge.Used in BookMyShow Friday (9 AM)
+    - Applied in scenarios such as BookMyShow on Friday (9 AM) when ticket sales are expected to surge.
 
 - The above scenario(s) is commonly known as **The Thundering Herd Problem**.
 - Artifacts [https://app.eraser.io/workspace/SVBgeRmqA2BgKoaeHhct](https://app.eraser.io/workspace/SVBgeRmqA2BgKoaeHhct)
